@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧旅遊規劃助手 - 地圖導覽</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">小半天旅遊規劃助手</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="map.html" class="active">地圖導覽</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>🗺️ <span id="current-season">各季節</span> 推薦地圖導覽</h2>
+            
+            <div class="mock-map">
+                📍 [ 互動地圖區域 - 請點擊下方熱門景點卡片 ]
+            </div>
+
+            <h3 style="text-align: center; margin-bottom: 1.5rem;">🔥 本季熱門推薦景點：</h3>
+            <div class="content-grid">
+                <div class="card spot-card" data-spot="夢幻森林">
+                    <h3>🌲 夢幻森林</h3>
+                    <p>享受芬多精與大自然步道，遠離城市喧囂。</p>
+                </div>
+                <div class="card spot-card" data-spot="蔚藍海岸">
+                    <h3>🏖️ 蔚藍海岸</h3>
+                    <p>陽光、沙灘與絕美夕陽，夏日必訪聖地。</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="index.html" class="btn btn-secondary">⬅️ 返回重新選擇季節</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+            <p>&copy; 2026 旅遊規劃助手 | 專題製作</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

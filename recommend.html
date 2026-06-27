@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧旅遊規劃助手 - 行程偏好</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">小半天旅遊規劃助手</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="map.html">地圖導覽</a></li>
+                <li><a href="recommend.html" class="active">行程偏好</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>🎯 您選擇的目的地：<span id="current-spot" style="color: var(--accent-red);">未選擇</span></h2>
+            
+            <form id="preference-form" class="contact-form">
+                <div class="form-group">
+                    <label for="hotel">🏠 住宿偏好</label>
+                    <select id="hotel" name="hotel" required>
+                        <option value="">-- 請選擇住宿等級 --</option>
+                        <option value="五星級豪華飯店">五星級豪華飯店</option>
+                        <option value="文青特色民宿">文青特色民宿</option>
+                        <option value="經濟實惠青年旅館">經濟實惠青年旅館</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="transport">🚗 交通方式</label>
+                    <select id="transport" name="transport" required>
+                        <option value="">-- 請選擇交通工具 --</option>
+                        <option value="自駕租車自由行">自駕租車自由行</option>
+                        <option value="搭乘大眾運輸 (高鐵/巴士)">搭乘大眾運輸 (高鐵/巴士)</option>
+                        <option value="包車在地一日遊">包車在地一日遊</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="route">📍 路線風格</label>
+                    <select id="route" name="route" required>
+                        <option value="">-- 請選擇行程節奏 --</option>
+                        <option value="特攻充實流（打卡排滿滿）">特攻充實流（打卡排滿滿）</option>
+                        <option value="慢活度假流（睡飽再出發）">慢活度假流（睡飽再出發）</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; gap: 1rem;">
+                    <button type="submit" class="btn" style="flex: 1;">✨ 生成完整旅遊規劃</button>
+                    <a href="map.html" class="btn btn-secondary" style="text-align: center;">⬅️ 返回地圖</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+            <p>&copy; 2026 旅遊規劃助手 | 專題製作</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
